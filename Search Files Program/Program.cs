@@ -81,8 +81,6 @@ namespace Search_Files_Program
                         Console.WriteLine("Search folder name must have at least one letter and no more than 1000");
                         goto case 2;
                     }
-
-
                     Console.WriteLine("Start Searching...");
                     searchManager = new SearchManager(textSearch, rootDirectory);
                     if (searchManager.DbResultsIndication == -1)
