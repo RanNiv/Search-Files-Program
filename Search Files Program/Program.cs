@@ -70,7 +70,7 @@ namespace Search_Files_Program
                     textSearch = Console.ReadLine();
                     if (textSearch.Length == 0 || textSearch.Length > 1000)
                     {
-                        Console.WriteLine("Search file name or folder must have at least one letter and no more than 1000");
+                        Console.WriteLine("Search file name must have at least one letter and no more than 1000");
                         goto case 2;
                     }
                     Console.Write("Enter root directory to search in: ");
