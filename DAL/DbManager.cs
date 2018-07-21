@@ -16,7 +16,7 @@ namespace DAL
         static DbManager()
         {
             string str = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().GetName().CodeBase).Replace("\\bin\\Debug", "").Replace("file:\\", "");
-            connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"" + str + "\\FileDb.mdf\";Integrated Security=True";
+            connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"" + str + "\\FilesDb.mdf\";Integrated Security=True";
         }
 
         //Get last Search Id from the SearchHistory table
