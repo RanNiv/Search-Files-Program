@@ -50,7 +50,7 @@ namespace Search_Files_Program
                 case 1: //  searching file,with no folder specification
                     Console.Write("Enter file name to search: ");
                     textSearch = Console.ReadLine();
-                    if (textSearch.Length==0 || textSearch.Length>0)
+                    if (textSearch.Length==0 || textSearch.Length>1000)
                     {
                         Console.WriteLine("Search file name must have at least one letter and no more than 1000");
                         goto case 1;
@@ -68,7 +68,7 @@ namespace Search_Files_Program
                 case 2: //searching file,with folder specification
                     Console.Write("Enter file name to search: ");
                     textSearch = Console.ReadLine();
-                    if (textSearch.Length == 0 || textSearch.Length > 0)
+                    if (textSearch.Length == 0 || textSearch.Length > 1000)
                     {
                         Console.WriteLine("Search file name or folder must have at least one letter and no more than 1000");
                         goto case 2;
@@ -76,7 +76,7 @@ namespace Search_Files_Program
                     Console.Write("Enter root directory to search in: ");
                     rootDirectory = Console.ReadLine();
 
-                    if (rootDirectory.Length == 0 || rootDirectory.Length > 0)
+                    if (rootDirectory.Length == 0 || rootDirectory.Length > 1000)
                     {
                         Console.WriteLine("Search folder name must have at least one letter and no more than 1000");
                         goto case 2;
