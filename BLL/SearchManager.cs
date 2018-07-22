@@ -1,16 +1,12 @@
 ﻿using DAL;
 using System;
-using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BLL
 {
 
-      public  class SearchManager
+    public  class SearchManager
         {
             private string[] drives;
             public StringCollection Log { get; set; } = new StringCollection();
